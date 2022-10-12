@@ -13,10 +13,14 @@ Die d1;
 
     @org.junit.jupiter.api.Test
     void roll() {
+        final int rolls = 10000;
         int[] res = new int[6];
-        for (int i = 0; i < 10000; i++) {
+        for (int i = 0; i < rolls; i++) {
             d1.roll();
-            res[d1.getFaceValue()-1] =
+            res[d1.getFaceValue()-1] ++;
+        }
+        for (int i : res){
+            assertEquals(rolls/6,res[i],rolls);
         }
 
 
