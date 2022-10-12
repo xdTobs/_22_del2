@@ -25,4 +25,10 @@ public class DiceCup {
             diceArray[i] = new Die();
         }
     }
+    public DiceCup(int dice, int max){
+        diceArray = new Die[dice];
+        for (int i = 0; i < dice; i++) {
+            diceArray[i] = new Die(max);
+        }
+    }
 }

@@ -4,13 +4,18 @@ import java.lang.Math;
 
 public class Die {
     //Private attributter for vores terninger
-    private final int Max = 6;
+    private int Max = 6;
+
     private int faceValue;
 
     //Konstruktør for terningerne
     public Die() {
         faceValue = 1;
 
+    }
+    public Die(int max) {
+        faceValue = 1;
+        this.Max = max;
     }
 
     //Terningerne bygges ud fra samme princip som TestDice, da vores test viser en normalfordeling
