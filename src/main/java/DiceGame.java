@@ -1,4 +1,5 @@
 import gui_fields.GUI_Field;
+import gui_fields.GUI_Player;
 import gui_fields.GUI_Start;
 import gui_fields.GUI_Street;
 import gui_main.GUI;
@@ -22,5 +23,10 @@ public class DiceGame {
             fields[i] = new GUI_Street(" ", " ", " ", " ", Color.BLACK, Color.BLACK);
         }
         GUI gui = new GUI(fields, Color.WHITE);
+        GUI_Player player1 = new GUI_Player(l.playerName1,1000);
+        GUI_Player player2 = new GUI_Player(l.playerName2,1000);
+        gui.addPlayer(player1);
+        gui.addPlayer(player2);
+
     }
 }
