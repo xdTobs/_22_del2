@@ -15,7 +15,7 @@ public class DiceGame {
         fields[0] = new GUI_Start("Start"," "," ",Color.white,Color.black);
         for (int i = 1; i < 13; i++) {
 
-            fields[i] = new GUI_Street(l.fieldNames[i-1], " ", " ", Integer.toString(fieldValues[i-1]), Color.white, Color.BLACK);
+            fields[i] = new GUI_Street(l.fieldNames[i-1], Integer.toString(fieldValues[i-1]), " ", Integer.toString(fieldValues[i-1]), Color.white, Color.BLACK);
 
         }
         for (int i = 13; i < 40; i++) {
