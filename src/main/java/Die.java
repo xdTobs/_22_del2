@@ -14,7 +14,7 @@ public class Die {
     }
 
     //Terningerne bygges ud fra samme princip som TestDice, da vores test viser en normalfordeling
-    public int roll1() {
+    public int roll() {
         faceValue = (int) (Math.random() * Max + 1);
         return faceValue;
     }
@@ -30,16 +30,5 @@ public class Die {
         return x;
     }
 
-    //Metode til at få værdien af 2 terninger
-    public int getSum(int a, int b) {
-        return a + b;
-    }
-    public boolean getEns(int a, int b) {
-        if (a == b) {
-            return true;
-        } else {
-            return false;
-        }
 
-    }
 }
