@@ -5,4 +5,7 @@ public class Language {
     public final String rollDice = "Press the button to roll the dice";
 
     public final String gameWon = "has won the game";
+
+    public final String playerName1 = "Player1";
+    public final String playerName2 = "Player2";
 }
