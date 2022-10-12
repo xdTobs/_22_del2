@@ -1,4 +1,5 @@
 public class Language {
+    public final String[] fieldNames = {"","Tower","Crater","Palace Gates","Cold Desert","Walled City","Monastery","Black Cave","Huts in the mountain","The Werewall","The Pit","Goldmine"};
     public final String fieldName1 = null;
     public final String fieldName2 = "Tower";
     public final String fieldName3 = "Crater";

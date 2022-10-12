@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44627bcd-b933-491e-9d53-31f9add33021" name="Changes" comment="updated classes">
+    <list default="true" id="44627bcd-b933-491e-9d53-31f9add33021" name="Changes" comment="Initialized some values in Language class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DiceGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DiceGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Language.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Language.java" afterDir="false" />
     </list>
@@ -63,7 +64,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665498951406</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initialized some values in Language class">
+      <created>1665562442791</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665562442791</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,6 +102,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="updated classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated classes" />
+    <MESSAGE value="Initialized some values in Language class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initialized some values in Language class" />
   </component>
 </project>
