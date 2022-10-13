@@ -49,11 +49,15 @@ while (player1.getBalance()<3000 && player2.getBalance()<3000){
     fields[carPos[playerTurn]].setCar(selectedPlayer,false);
     fields[diceCup.getSum()].setCar(selectedPlayer,true);
     carPos[playerTurn] = diceCup.getSum();
-    selectedPlayer.setBalance(selectedPlayer.getBalance()+fieldValues[diceCup.getSum()-1]);
+    int balanceUpdate = selectedPlayer.getBalance()+fieldValues[diceCup.getSum()-1];
+    if (balanceUpdate<0)selectedPlayer.setBalance(0);
+    else selectedPlayer.setBalance(selectedPlayer.getBalance()+fieldValues[diceCup.getSum()-1]);
 
-
+if (!(diceCup.getSum()==10)){
     if (playerTurn+1 == players.length) playerTurn = 0;
     else playerTurn++;
+}
+else gui.showMessage( selectedPlayer.getName() +" "+ l.onWereWall);
 }
         gui.showMessage(selectedPlayer.getName() + l.gameWon);
 
