@@ -25,8 +25,22 @@ public class DiceGame {
         GUI gui = new GUI(fields, Color.WHITE);
         GUI_Player player1 = new GUI_Player(l.playerName1,1000);
         GUI_Player player2 = new GUI_Player(l.playerName2,1000);
-        gui.addPlayer(player1);
-        gui.addPlayer(player2);
+        GUI_Player[] players = new GUI_Player[2];
+        players[0] = player1;
+        players[1] = player2;
+        int playerTurn = 0;
+        GUI_Player selectedPlayer;
+        for (GUI_Player p : players){
+            gui.addPlayer(p);
+        }
 
+
+
+while (player1.getBalance()<3000 && player2.getBalance()<3000){
+    selectedPlayer = players[playerTurn];
+    String s = gui.getUserButtonPressed("Det er " + selectedPlayer.getName() + " der har tur", "Rul med terningerne");
+
+
+}
     }
 }
