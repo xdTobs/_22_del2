@@ -30,7 +30,9 @@ public class DiceGame {
         players[1] = player2;
         int playerTurn = 0;
         int[] faceValues;
-        GUI_Player selectedPlayer;
+        int[] carPos = new int[players.length];
+        for (int i :carPos) i =0;
+        GUI_Player selectedPlayer = new GUI_Player("temp");
         for (GUI_Player p : players){
             gui.addPlayer(p);
         }
@@ -44,12 +46,16 @@ while (player1.getBalance()<3000 && player2.getBalance()<3000){
     diceCup.roll();
     faceValues = diceCup.getFaceValueArray();
     gui.setDice(faceValues[0],faceValues[1]);
-    gui.showMessage("Moving the car");
+    fields[carPos[playerTurn]].setCar(selectedPlayer,false);
     fields[diceCup.getSum()].setCar(selectedPlayer,true);
+    carPos[playerTurn] = diceCup.getSum();
+    selectedPlayer.setBalance(selectedPlayer.getBalance()+fieldValues[diceCup.getSum()-1]);
 
 
-
+    if (playerTurn+1 == players.length) playerTurn = 0;
+    else playerTurn++;
 }
+        gui.showMessage(selectedPlayer.getName() + l.gameWon);
 
 }
     }
