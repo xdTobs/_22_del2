@@ -26,15 +26,15 @@ public class DiceCup {
     }
 
     //int dice defined in Main as the total number of dice in a cup
-    public DiceCup(int dice){
-        diceArray = new Die[dice];
-        for (int i = 0; i < dice; i++) {
+    public DiceCup(){
+        diceArray = new Die[2];
+        for (int i = 0; i < 2; i++) {
             diceArray[i] = new Die();
         }
     }
-    public DiceCup(int dice, int max){
-        diceArray = new Die[dice];
-        for (int i = 0; i < dice; i++) {
+    public DiceCup( int max){
+        diceArray = new Die[2];
+        for (int i = 0; i < 2; i++) {
             diceArray[i] = new Die(max);
         }
     }

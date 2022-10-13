@@ -29,18 +29,28 @@ public class DiceGame {
         players[0] = player1;
         players[1] = player2;
         int playerTurn = 0;
+        int[] faceValues;
         GUI_Player selectedPlayer;
         for (GUI_Player p : players){
             gui.addPlayer(p);
         }
-
+DiceCup diceCup = new DiceCup();
 
 
 while (player1.getBalance()<3000 && player2.getBalance()<3000){
-    selectedPlayer = players[playerTurn];
-    String s = gui.getUserButtonPressed("Det er " + selectedPlayer.getName() + " der har tur", "Rul med terningerne");
 
+    selectedPlayer = players[playerTurn];
+    gui.showMessage( selectedPlayer.getName() +" "+ l.onRollDice);
+    diceCup.roll();
+    faceValues = diceCup.getFaceValueArray();
+    gui.setDice(faceValues[0],faceValues[1]);
+    gui.showMessage("Moving the car");
+    fields[diceCup.getSum()].setCar(selectedPlayer,true);
+
+
+
+}
 
 }
     }
-}
+

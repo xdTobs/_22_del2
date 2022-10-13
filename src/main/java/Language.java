@@ -8,4 +8,5 @@ public class Language {
 
     public final String playerName1 = "Player1";
     public final String playerName2 = "Player2";
+    public final String onRollDice = "It is your turn. Roll the Dice";
 }
