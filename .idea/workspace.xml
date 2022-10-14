@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38d9c3cd-ef9f-461e-93f2-f0468fbb4817" name="Changes" comment="changed fieldValues to be 0-indexed">
+    <list default="true" id="38d9c3cd-ef9f-461e-93f2-f0468fbb4817" name="Changes" comment="got car to move to start at the beginning of turn">
       <change beforePath="$PROJECT_DIR$/src/main/java/DiceGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DiceGame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -155,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665727545375</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="got car to move to start at the beginning of turn">
+      <created>1665728317219</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1665728317219</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +230,7 @@
     <MESSAGE value="balance update" />
     <MESSAGE value="added werewall functionality" />
     <MESSAGE value="changed fieldValues to be 0-indexed" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed fieldValues to be 0-indexed" />
+    <MESSAGE value="got car to move to start at the beginning of turn" />
+    <option name="LAST_COMMIT_MESSAGE" value="got car to move to start at the beginning of turn" />
   </component>
 </project>
