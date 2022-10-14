@@ -1,6 +1,6 @@
 public class DiceCup {
 
-    Die[] diceArray;
+    private Die[] diceArray;
 
     //returns the total sum of all dice
     public int getSum(){
