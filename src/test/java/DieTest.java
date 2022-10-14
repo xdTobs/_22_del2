@@ -13,10 +13,23 @@ Die d1;
 
     @org.junit.jupiter.api.Test
     void roll() {
-        int[] res = new int[6];
-        for (int i = 0; i < 10000; i++) {
+        final double rolls = 10000;
+        double standardDeviation =0;
+        double sum =0;
+        for (int i = 0; i < rolls; i++) {
             d1.roll();
-            res[d1.getFaceValue()-1] =
+            sum += Math.pow(d1.getFaceValue(),2)-Math.pow(3.5,2);
+        }
+        standardDeviation = Math.sqrt(1/(rolls)*sum);
+
+
+        int[] res = new int[6];
+        for (int i = 0; i < rolls; i++) {
+            d1.roll();
+            res[d1.getFaceValue()-1] ++;
+        }
+        for (int i : res){
+            assertEquals(rolls/6,i,standardDeviation*100);
         }
 
 
