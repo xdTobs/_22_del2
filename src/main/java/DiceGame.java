@@ -35,6 +35,9 @@ DiceCup diceCup = new DiceCup();
 while (player1.getBalance()<3000 && player2.getBalance()<3000){
 
     selectedPlayer = players[playerTurn];
+    fields[carPos[playerTurn]].setCar(selectedPlayer,false);
+    fields[0].setCar(selectedPlayer,true);
+    carPos[playerTurn] = 0;
     gui.showMessage( selectedPlayer.getName() +" "+ l.onRollDice);
     diceCup.roll();
     faceValues = diceCup.getFaceValueArray();
@@ -72,5 +75,6 @@ else gui.showMessage( selectedPlayer.getName() +" "+ l.onWereWall);
         }
         return fields;
     }
+
     }
 

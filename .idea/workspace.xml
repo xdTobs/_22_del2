@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38d9c3cd-ef9f-461e-93f2-f0468fbb4817" name="Changes" comment="DiceGame class">
+    <list default="true" id="38d9c3cd-ef9f-461e-93f2-f0468fbb4817" name="Changes" comment="changed fieldValues to be 0-indexed">
       <change beforePath="$PROJECT_DIR$/src/main/java/DiceGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DiceGame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -148,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665664527452</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="changed fieldValues to be 0-indexed">
+      <created>1665727545375</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1665727545375</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +222,7 @@
     <MESSAGE value="Roll dice and move" />
     <MESSAGE value="balance update" />
     <MESSAGE value="added werewall functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="added werewall functionality" />
+    <MESSAGE value="changed fieldValues to be 0-indexed" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed fieldValues to be 0-indexed" />
   </component>
 </project>
