@@ -12,8 +12,8 @@ public class DiceGame {
 
     public static void main(String[] args) {
         Language l = new Language();
-        int[] fieldValues = {0,250,-100,100,-20,180,0,-70,60,-80,-50,650};
-        GUI_Field[] fields = initializeFields();
+        int[] fieldValues = {0,0,250,-100,100,-20,180,0,-70,60,-80,-50,650};
+        GUI_Field[] fields = initializeFields(fieldValues);
         GUI gui = new GUI(fields,Color.white);
 
         GUI_Player player1 = new GUI_Player(l.playerName1,1000);
@@ -42,9 +42,9 @@ while (player1.getBalance()<3000 && player2.getBalance()<3000){
     fields[carPos[playerTurn]].setCar(selectedPlayer,false);
     fields[diceCup.getSum()].setCar(selectedPlayer,true);
     carPos[playerTurn] = diceCup.getSum();
-    int balanceUpdate = selectedPlayer.getBalance()+fieldValues[diceCup.getSum()-1];
+    int balanceUpdate = selectedPlayer.getBalance()+fieldValues[diceCup.getSum()];
     if (balanceUpdate<0)selectedPlayer.setBalance(0);
-    else selectedPlayer.setBalance(selectedPlayer.getBalance()+fieldValues[diceCup.getSum()-1]);
+    else selectedPlayer.setBalance(selectedPlayer.getBalance()+fieldValues[diceCup.getSum()]);
 
 if (!(diceCup.getSum()==10)){
     if (playerTurn+1 == players.length) playerTurn = 0;
@@ -56,15 +56,15 @@ else gui.showMessage( selectedPlayer.getName() +" "+ l.onWereWall);
 
 }
 
-    public static GUI_Field[] initializeFields(){
+    public static GUI_Field[] initializeFields(int[] fieldValues){
         Language l = new Language();
-        int[] fieldValues = {0,250,-100,100,-20,180,0,-70,60,-80,-50,650};
+
         GUI_Field[] fields;
         fields = new GUI_Field[40];
         fields[0] = new GUI_Start("Start"," "," ",Color.white,Color.black);
         for (int i = 1; i < 13; i++) {
 
-            fields[i] = new GUI_Street(l.fieldNames[i-1], Integer.toString(fieldValues[i-1]), " ", Integer.toString(fieldValues[i-1]), Color.white, Color.BLACK);
+            fields[i] = new GUI_Street(l.fieldNames[i-1], Integer.toString(fieldValues[i]), " ", Integer.toString(fieldValues[i]), Color.white, Color.BLACK);
 
         }
         for (int i = 13; i < 40; i++) {
