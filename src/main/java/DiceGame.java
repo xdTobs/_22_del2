@@ -14,33 +14,48 @@ public class DiceGame {
     GUI_Field[] fields;
     Language language;
     boolean is_player_1_turn;
+    final int[] fieldValues = {0, 0, 250, -100, 100, -20, 180, 0, -70, 60, -80, -50, 650};
 
     DiceCup diceCup = new DiceCup();
 
     public DiceGame() {
-        int[] fieldValues = {0, 0, 250, -100, 100, -20, 180, 0, -70, 60, -80, -50, 650};
 
         this.language = new Language();
         // REMEMBER TO GIVE THE CAR A COLOR, SO P1 AND P2 DONT HAVE SAME COLORS.
         this.player1 = new GUI_Player(language.playerName1, 1000);
         this.player2 = new GUI_Player(language.playerName2, 1000);
-        this.fields = initializeFields(fieldValues);
+        this.fields = initializeFields();
         this.gui = new GUI(fields, Color.white);
+
+        gui.addPlayer(player1);
+        gui.addPlayer(player2);
     }
 
     // play_game
     private void play_game() {
         is_player_1_turn = true;
-        while (is_gameover()) {
-            System.out.println(player1.getBalance() + "\n" + player2.getBalance());
-            System.out.println("=================");
-            play_round();
+        while (true) {
+            GUI_Player current_player = is_player_1_turn ? player1 : player2;
+            play_round(current_player);
+            boolean is_werewall = diceCup.getSum() == 10;
+
+            if (is_gameover()) {
+
+
+                System.out.println(player1.getBalance() + "\n" + player2.getBalance());
+                System.out.println("=================");
+                System.out.println(is_gameover());
+                this.gui.showMessage(current_player.getName() + language.gameWon);
+                break;
+            } else if (is_werewall) {
+                this.gui.showMessage(current_player.getName() + " " + language.onWereWall);
+                continue;
+            }
             next_player();
         }
-
     }
 
-    private GUI_Field[] initializeFields(int[] fieldValues) {
+    private GUI_Field[] initializeFields() {
         GUI_Field[] fields;
         fields = new GUI_Field[40];
         fields[0] = new GUI_Start("Start", " ", " ", Color.white, Color.black);
@@ -55,13 +70,12 @@ public class DiceGame {
 
 
     // play_round
-    private void play_round() {
-        GUI_Player current_player = is_player_1_turn ? player1 : player2;
+    private void play_round(GUI_Player current_player) {
         diceCup.roll();
         int dice_sum = diceCup.getSum();
         gui.showMessage(current_player.getName() + " " + language.onRollDice);
-
-        current_player.setBalance(current_player.getBalance() + dice_sum);
+        int field_value = fieldValues[dice_sum];
+        current_player.setBalance(current_player.getBalance() + field_value);
     }
 
     private void next_player() {
@@ -71,7 +85,7 @@ public class DiceGame {
     //
     private boolean is_gameover() {
         int win_limit = 1100;
-        return player1.getBalance() < win_limit && player2.getBalance() < win_limit;
+        return player1.getBalance() > win_limit || player2.getBalance() > win_limit;
     }
 
 //    public static void main(String[] args) {
