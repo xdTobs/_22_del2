@@ -34,6 +34,7 @@ public class DiceCup {
         }
     }
 
+
     public DiceCup(int max) {
         diceArray = new Die[2];
         for (int i = 0; i < 2; i++) {
