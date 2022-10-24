@@ -17,20 +17,22 @@ class DiceCupTest {
 
     @Test
     void getSum() {
+        int res =0;
+       int[] faceValues = diceCup.getFaceValueArray();
+        for (int i : faceValues)res +=i;
+        assertEquals(diceCup.getSum(),res);
     }
 
     @Test
     void roll() {
-        diceCup.roll();
-        int[] data = new int[36];
-        int index =0;
-        int[] currentRoll = diceCup.getFaceValueArray();
-        index+=(currentRoll[0]-1)*6;
-        index+=currentRoll[1]-1;
-        data[index]++;
+        //not used since it just calls roll on dice, which is tested
     }
 
     @Test
     void getFaceValueArray() {
+        int res =0;
+        int[] faceValues = diceCup.getFaceValueArray();
+        for (int i : faceValues)res +=i;
+        assertEquals(res,diceCup.getSum());
     }
 }
