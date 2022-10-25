@@ -62,6 +62,7 @@ public class DiceGame {
     }
 
     private void playRound(GUI_Player currentPlayer) {
+        showPlayerOnGui(0, currentPlayer);
         diceCup.roll();
         int diceSum = diceCup.getSum();
         gui.showMessage(currentPlayer.getName() + " " + language.onRollDice);
@@ -82,17 +83,13 @@ public class DiceGame {
 //        }
 //        currentPlayer.getCar().setPosition(newPosition);
 //    }
-        clearCarsFromGui();
+        clearCarFromGui(currentPlayer);
         fields[diceSum].setCar(currentPlayer, true);
     }
 
-    private void clearCarsFromGui() {
-
-        for (int i = 1; i < 13; i++) {
-            for (GUI_Player player :
-                    players) {
+    private void clearCarFromGui(GUI_Player player) {
+        for (int i = 0; i < 13; i++) {
                 fields[i].setCar(player, false);
-            }
         }
     }
 
