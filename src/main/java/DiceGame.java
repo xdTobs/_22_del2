@@ -111,7 +111,7 @@ public class DiceGame {
 
     private boolean isGameover() {
         int winLimit = 3000;
-        return players[0].getBalance() > winLimit || players[1].getBalance() > winLimit;
+        return players[0].getBalance() >= winLimit || players[1].getBalance() >= winLimit;
     }
 
     public static void main(String[] args) {
