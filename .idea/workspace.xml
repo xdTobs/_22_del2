@@ -58,7 +58,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DiceCupTest">
+  <component name="RunManager" selected="JUnit.DieTest">
     <configuration name="DiceGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DiceGame" />
       <module name="_22_del2" />
@@ -86,8 +86,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DiceCupTest" />
         <item itemvalue="JUnit.DieTest" />
+        <item itemvalue="JUnit.DiceCupTest" />
         <item itemvalue="Application.DiceGame" />
       </list>
     </recent_temporary>
