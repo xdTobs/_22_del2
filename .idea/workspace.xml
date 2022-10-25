@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="38d9c3cd-ef9f-461e-93f2-f0468fbb4817" name="Changes" comment="Changed how cars are showed on gui, by changing the method ClearCarsFromGui to ClearCarFromGui, which takes a player, and specifically removes that player. This means only the current player gets moved on their turn, and should work better with more than 2 players">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DieTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DieTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Die.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Die.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Development" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />

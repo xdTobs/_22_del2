@@ -14,7 +14,7 @@ public class Die {
     }
     public Die(int max) {
         faceValue = 1;
-        this.Max = max;
+        this.Max = Math.max(max,1);
     }
 
     //Terningerne bygges ud fra samme princip som TestDice, da vores test viser en normalfordeling
