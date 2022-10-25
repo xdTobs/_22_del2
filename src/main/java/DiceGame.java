@@ -65,17 +65,12 @@ public class DiceGame {
         int diceSum = diceCup.getSum();
         gui.showMessage(currentPlayer.getName() + " " + language.onRollDice);
         showPlayerOnGui(diceSum, currentPlayer);
-
         // Check if player is going to be under 0 in value.
         // If so, value is set to value, instead of negative value.
         int fieldValue = fieldValues[diceSum];
         int player_balance = currentPlayer.getBalance();
         int new_balance = player_balance + fieldValue;
-        if (new_balance >= 0) {
-            currentPlayer.setBalance(new_balance);
-        } else {
-            currentPlayer.setBalance(0);
-        }
+        currentPlayer.setBalance(Math.max(new_balance, 0));
     }
 
     private void showPlayerOnGui(int diceSum, GUI_Player currentPlayer) {
