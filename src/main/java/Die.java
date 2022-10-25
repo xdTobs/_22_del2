@@ -11,7 +11,6 @@ public class Die {
     //Konstruktør for terningerne
     public Die() {
         faceValue = 1;
-
     }
     public Die(int max) {
         faceValue = 1;
