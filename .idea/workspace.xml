@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38d9c3cd-ef9f-461e-93f2-f0468fbb4817" name="Changes" comment="small change in is_gameover from &lt; to &lt;=">
+    <list default="true" id="38d9c3cd-ef9f-461e-93f2-f0468fbb4817" name="Changes" comment="small change in playRound function">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DiceGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DiceGame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +82,7 @@
       <updated>1664888482245</updated>
       <workItem from="1664888484673" duration="95000" />
       <workItem from="1665410961667" duration="334000" />
-      <workItem from="1666609392351" duration="7337000" />
+      <workItem from="1666609392351" duration="7710000" />
     </task>
     <task id="LOCAL-00001" summary="updated classes">
       <created>1665498951406</created>
@@ -195,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666695101629</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="small change in playRound function">
+      <created>1666695547219</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1666695547219</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,14 +275,15 @@
     <MESSAGE value="commented DiceGame.java" />
     <MESSAGE value="tests in DiceCupTest.java" />
     <MESSAGE value="small change in is_gameover from &lt; to &lt;=" />
-    <option name="LAST_COMMIT_MESSAGE" value="small change in is_gameover from &lt; to &lt;=" />
+    <MESSAGE value="small change in playRound function" />
+    <option name="LAST_COMMIT_MESSAGE" value="small change in playRound function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/DiceGame.java</url>
-          <line>40</line>
+          <line>41</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>

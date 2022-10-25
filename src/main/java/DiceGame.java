@@ -1,7 +1,4 @@
-import gui_fields.GUI_Field;
-import gui_fields.GUI_Player;
-import gui_fields.GUI_Start;
-import gui_fields.GUI_Street;
+import gui_fields.*;
 import gui_main.GUI;
 
 import java.awt.*;
@@ -19,8 +16,12 @@ public class DiceGame {
     public DiceGame() {
         this.language = new Language();
         // Remember to give the car a color, so p1 and p2 don't have same colors.
-        this.players[0] = new GUI_Player(language.playerName1, 1000);
-        this.players[1] = new GUI_Player(language.playerName2, 1000);
+        GUI_Car car1 = new GUI_Car();
+        car1.setPrimaryColor(Color.black);
+        GUI_Car car2 = new GUI_Car();
+        car2.setPrimaryColor(Color.white);
+        this.players[0] = new GUI_Player(language.playerName1, 1000,car1);
+        this.players[1] = new GUI_Player(language.playerName2, 1000,car2);
         this.fields = initializeFields();
         this.gui = new GUI(fields, Color.white);
 
