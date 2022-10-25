@@ -7,7 +7,6 @@ import gui_main.GUI;
 import java.awt.*;
 
 public class DiceGame {
-
     GUI_Player[] players = new GUI_Player[2];
     GUI gui;
     GUI_Field[] fields;
@@ -18,9 +17,8 @@ public class DiceGame {
     DiceCup diceCup = new DiceCup();
 
     public DiceGame() {
-
         this.language = new Language();
-        // REMEMBER TO GIVE THE CAR A COLOR, SO P1 AND P2 DONT HAVE SAME COLORS.
+        // Remember to give the car a color, so p1 and p2 don't have same colors.
         this.players[0] = new GUI_Player(language.playerName1, 1000);
         this.players[1] = new GUI_Player(language.playerName2, 1000);
         this.fields = initializeFields();
@@ -112,7 +110,7 @@ public class DiceGame {
     }
 
     private boolean isGameover() {
-        int winLimit = 2100;
+        int winLimit = 3000;
         return players[0].getBalance() > winLimit || players[1].getBalance() > winLimit;
     }
 
