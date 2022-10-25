@@ -49,12 +49,15 @@ Die d1;
         assertEquals(count,rolls);
     }
 
-
     @org.junit.jupiter.api.Test
-    void getFaceValue() {
-    }
-
-    @org.junit.jupiter.api.Test
-    void setFaceValue() {
+    void rollNegativeDie() {
+        boolean res= true;
+        Die die = new Die(-8);
+        final int rolls = 100;
+        for (int i = 0; i < rolls; i++) {
+            die.roll();
+            if (die.getFaceValue()!=1)res = false;
+        }
+        assertTrue(res);
     }
 }

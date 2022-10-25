@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38d9c3cd-ef9f-461e-93f2-f0468fbb4817" name="Changes" comment="Changed how cars are showed on gui, by changing the method ClearCarsFromGui to ClearCarFromGui, which takes a player, and specifically removes that player. This means only the current player gets moved on their turn, and should work better with more than 2 players">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Die.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Die.java" afterDir="false" />
+    <list default="true" id="38d9c3cd-ef9f-461e-93f2-f0468fbb4817" name="Changes" comment="changed die, to only take a max argument larger than or equal 1">
+      <change beforePath="$PROJECT_DIR$/src/test/java/DieTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DieTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +57,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.DieTest">
     <configuration name="DiceGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DiceGame" />
       <module name="_22_del2" />
@@ -66,8 +65,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DieTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="_22_del2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DieTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DieTest" />
         <item itemvalue="Application.DiceGame" />
       </list>
     </recent_temporary>
@@ -217,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666696617087</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="changed die, to only take a max argument larger than or equal 1">
+      <created>1666702905934</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1666702905934</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,7 +308,8 @@
     <MESSAGE value="small change in playRound function" />
     <MESSAGE value="added different colors for the players, might need to be generalized somehow for more players" />
     <MESSAGE value="Changed how cars are showed on gui, by changing the method ClearCarsFromGui to ClearCarFromGui, which takes a player, and specifically removes that player. This means only the current player gets moved on their turn, and should work better with more than 2 players" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed how cars are showed on gui, by changing the method ClearCarsFromGui to ClearCarFromGui, which takes a player, and specifically removes that player. This means only the current player gets moved on their turn, and should work better with more than 2 players" />
+    <MESSAGE value="changed die, to only take a max argument larger than or equal 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed die, to only take a max argument larger than or equal 1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
