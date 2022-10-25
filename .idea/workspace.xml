@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38d9c3cd-ef9f-461e-93f2-f0468fbb4817" name="Changes" comment="changed die, to only take a max argument larger than or equal 1">
-      <change beforePath="$PROJECT_DIR$/src/test/java/DieTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DieTest.java" afterDir="false" />
+    <list default="true" id="38d9c3cd-ef9f-461e-93f2-f0468fbb4817" name="Changes" comment="added rollNegativeDie Test">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DiceCupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DiceCupTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,10 +58,19 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DieTest">
+  <component name="RunManager" selected="JUnit.DiceCupTest">
     <configuration name="DiceGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DiceGame" />
       <module name="_22_del2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiceCupTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="_22_del2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DiceCupTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -76,6 +86,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DiceCupTest" />
         <item itemvalue="JUnit.DieTest" />
         <item itemvalue="Application.DiceGame" />
       </list>
@@ -233,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666702905934</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="added rollNegativeDie Test">
+      <created>1666703153459</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1666703153459</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,7 +327,8 @@
     <MESSAGE value="added different colors for the players, might need to be generalized somehow for more players" />
     <MESSAGE value="Changed how cars are showed on gui, by changing the method ClearCarsFromGui to ClearCarFromGui, which takes a player, and specifically removes that player. This means only the current player gets moved on their turn, and should work better with more than 2 players" />
     <MESSAGE value="changed die, to only take a max argument larger than or equal 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed die, to only take a max argument larger than or equal 1" />
+    <MESSAGE value="added rollNegativeDie Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="added rollNegativeDie Test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
