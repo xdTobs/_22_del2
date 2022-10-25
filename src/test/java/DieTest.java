@@ -12,7 +12,7 @@ Die d1;
     }
 
     @org.junit.jupiter.api.Test
-    void roll() {
+    void rollRandom() {
         final double rolls = 10000;
         double standardDeviation =0;
         double sum =0;
@@ -34,6 +34,21 @@ Die d1;
 
 
     }
+    @org.junit.jupiter.api.Test
+    void rollInBounds() {
+        int[] res = new int[6];
+        int count = 0;
+        final double rolls = 10000;
+        for (int i = 0; i < rolls; i++) {
+            d1.roll();
+            res[d1.getFaceValue()-1] ++;
+        }
+        for (int i : res){
+            count += i;
+        }
+        assertEquals(count,rolls);
+    }
+
 
     @org.junit.jupiter.api.Test
     void getFaceValue() {

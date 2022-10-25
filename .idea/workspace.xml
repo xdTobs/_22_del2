@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38d9c3cd-ef9f-461e-93f2-f0468fbb4817" name="Changes" comment="added different colors for the players, might need to be generalized somehow for more players">
+    <list default="true" id="38d9c3cd-ef9f-461e-93f2-f0468fbb4817" name="Changes" comment="Changed how cars are showed on gui, by changing the method ClearCarsFromGui to ClearCarFromGui, which takes a player, and specifically removes that player. This means only the current player gets moved on their turn, and should work better with more than 2 players">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DiceGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DiceGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DieTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DieTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +82,7 @@
       <updated>1664888482245</updated>
       <workItem from="1664888484673" duration="95000" />
       <workItem from="1665410961667" duration="334000" />
-      <workItem from="1666609392351" duration="8147000" />
+      <workItem from="1666609392351" duration="9867000" />
     </task>
     <task id="LOCAL-00001" summary="updated classes">
       <created>1665498951406</created>
@@ -210,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666695944071</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Changed how cars are showed on gui, by changing the method ClearCarsFromGui to ClearCarFromGui, which takes a player, and specifically removes that player. This means only the current player gets moved on their turn, and should work better with more than 2 players">
+      <created>1666696617087</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1666696617087</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,7 +291,8 @@
     <MESSAGE value="small change in is_gameover from &lt; to &lt;=" />
     <MESSAGE value="small change in playRound function" />
     <MESSAGE value="added different colors for the players, might need to be generalized somehow for more players" />
-    <option name="LAST_COMMIT_MESSAGE" value="added different colors for the players, might need to be generalized somehow for more players" />
+    <MESSAGE value="Changed how cars are showed on gui, by changing the method ClearCarsFromGui to ClearCarFromGui, which takes a player, and specifically removes that player. This means only the current player gets moved on their turn, and should work better with more than 2 players" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed how cars are showed on gui, by changing the method ClearCarsFromGui to ClearCarFromGui, which takes a player, and specifically removes that player. This means only the current player gets moved on their turn, and should work better with more than 2 players" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
