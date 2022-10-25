@@ -22,16 +22,6 @@ Die d1;
         }
         standardDeviation = Math.sqrt(1/(rolls)*sum);
         assertEquals(1.708, standardDeviation, 0.0427);
-        //assertTrue((1.708 - 0.0427) <= standardDeviation && standardDeviation <= 1.708 + 0.0427);
-
-        /*int[] res = new int[6];
-        for (int i = 0; i < rolls; i++) {
-            d1.roll();
-            res[d1.getFaceValue()-1] ++;
-        }
-        for (int i : res){
-            assertEquals(rolls/6,i,standardDeviation*100);
-        }*/
 
 
     }
