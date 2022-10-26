@@ -18,9 +18,9 @@ public class Die {
     }
 
     //Terningerne bygges ud fra samme princip som TestDice, da vores test viser en normalfordeling
-    public int roll() {
+    public void roll() {
         faceValue = (int) (Math.random() * Max + 1);
-        return faceValue;
+
     }
 
     //Get-metode til at se den nuværende faceValue af terningerne
