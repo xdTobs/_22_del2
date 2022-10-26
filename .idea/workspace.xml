@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38d9c3cd-ef9f-461e-93f2-f0468fbb4817" name="Changes" comment="Changed how cars are showed on gui, by changing the method ClearCarsFromGui to ClearCarFromGui, which takes a player, and specifically removes that player. This means only the current player gets moved on their turn, and should work better with more than 2 players">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DieTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DieTest.java" afterDir="false" />
+    <list default="true" id="38d9c3cd-ef9f-461e-93f2-f0468fbb4817" name="Changes" comment="added rollNegativeDie Test">
+      <change beforePath="$PROJECT_DIR$/src/main/java/DiceGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DiceGame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -299,7 +298,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/DiceGame.java</url>
-          <line>41</line>
+          <line>40</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>

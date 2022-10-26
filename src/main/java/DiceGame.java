@@ -15,7 +15,6 @@ public class DiceGame {
 
     public DiceGame() {
         this.language = new Language();
-        // Remember to give the car a color, so p1 and p2 don't have same colors.
         GUI_Car car1 = new GUI_Car();
         car1.setPrimaryColor(Color.black);
         GUI_Car car2 = new GUI_Car();
