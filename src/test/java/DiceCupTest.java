@@ -1,4 +1,3 @@
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -6,38 +5,36 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class DiceCupTest {
     DiceCup diceCup;
+
     @BeforeEach
     void setUp() {
         diceCup = new DiceCup();
     }
 
-    @AfterEach
-    void tearDown() {
-    }
-
     @Test
     void getSumStandard() {
-        int res =0;
-       int[] faceValues = diceCup.getFaceValueArray();
-        for (int i : faceValues)res +=i;
-        assertEquals(diceCup.getSum(),res);
+        int res = 0;
+        int[] faceValues = diceCup.getFaceValueArray();
+        for (int i : faceValues) res += i;
+        assertEquals(diceCup.getSum(), res);
     }
 
     @Test
     void getSumNegative() {
         diceCup = new DiceCup(-8);
-        int res =0;
+        int res = 0;
         int[] faceValues = diceCup.getFaceValueArray();
-        for (int i : faceValues)res +=i;
-        assertEquals(2,res);
+        for (int i : faceValues) res += i;
+        assertEquals(2, res);
     }
+
     @Test
     void getSumLarge() {
         diceCup = new DiceCup(1000);
-        int res =0;
+        int res = 0;
         int[] faceValues = diceCup.getFaceValueArray();
-        for (int i : faceValues)res +=i;
-        assertEquals(diceCup.getSum(),res);
+        for (int i : faceValues) res += i;
+        assertEquals(diceCup.getSum(), res);
     }
 
 
@@ -48,24 +45,25 @@ class DiceCupTest {
 
     @Test
     void getFaceValueArrayStandard() {
-        int res =0;
+        int res = 0;
         int[] faceValues = diceCup.getFaceValueArray();
-        for (int i : faceValues)res +=i;
-        assertEquals(res,diceCup.getSum());
+        for (int i : faceValues) res += i;
+        assertEquals(res, diceCup.getSum());
     }
+
     @Test
     void getFaceValueArrayNegative() {
         diceCup = new DiceCup(-8);
-        int res =0;
         int[] faceValues = diceCup.getFaceValueArray();
-        assertArrayEquals(new int[]{1, 1},faceValues);
+        assertArrayEquals(new int[]{1, 1}, faceValues);
     }
+
     @Test
     void getFaceValueArrayLarge() {
         diceCup = new DiceCup(1000);
-        int res =0;
+        int res = 0;
         int[] faceValues = diceCup.getFaceValueArray();
-        for (int i : faceValues)res +=i;
-        assertEquals(res,diceCup.getSum());
+        for (int i : faceValues) res += i;
+        assertEquals(res, diceCup.getSum());
     }
 }
