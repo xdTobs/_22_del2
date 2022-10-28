@@ -61,7 +61,7 @@ public class DiceGame {
             playRound(currentPlayer);
             // If player lands on werewall, then the current player gets an extra turn.
             boolean landedOnWerewallField = diceCup.getSum() == 10;
-            if (isGameover()) {
+            if (isGameover(currentPlayer)) {
                 // We break out of the loop if the game is over.
                 this.gui.showMessage(currentPlayer.getName() + " " + language.gameWon);
                 break;
@@ -103,7 +103,8 @@ public class DiceGame {
         int new_balance = updateBalance(player_balance, fieldValue);
         currentPlayer.setBalance(new_balance);
     }
-    int updateBalance(int oldBalance,int fieldValue) {
+
+    int updateBalance(int oldBalance, int fieldValue) {
         int newBalance = oldBalance + fieldValue;
         return Math.max(newBalance, 0);
     }
@@ -133,15 +134,10 @@ public class DiceGame {
         }
     }
 
-    // Checks if any player has a balance of 3000 or more, to see if there is a winner. Works for any amount of players.
-    private boolean isGameover() {
+    // Checks if current player has won.
+    private boolean isGameover(GUI_Player currentPlayer) {
         int winLimit = 3000;
-        for (GUI_Player player : players) {
-            if (player.getBalance() >= winLimit) {
-                return true;
-            }
-        }
-        return false;
+        return currentPlayer.getBalance() >= winLimit;
     }
 
     /**
