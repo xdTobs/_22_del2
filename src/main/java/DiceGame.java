@@ -100,8 +100,12 @@ public class DiceGame {
         // If so, value is set to value, instead of negative value.
         int fieldValue = fieldValues[diceSum];
         int player_balance = currentPlayer.getBalance();
-        int new_balance = player_balance + fieldValue;
-        currentPlayer.setBalance(Math.max(new_balance, 0));
+        int new_balance = updateBalance(player_balance, fieldValue);
+        currentPlayer.setBalance(new_balance);
+    }
+    int updateBalance(int oldBalance,int fieldValue) {
+        int newBalance = oldBalance + fieldValue;
+        return Math.max(newBalance, 0);
     }
 
     // We first remove all cars from gui the show where current player landed.
