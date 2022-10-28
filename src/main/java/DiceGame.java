@@ -59,6 +59,7 @@ public class DiceGame {
         while (true) {
             GUI_Player currentPlayer = players[playerTurn];
             playRound(currentPlayer);
+
             // If player lands on werewall, then the current player gets an extra turn.
             boolean landedOnWerewallField = diceCup.getSum() == 10;
             if (isGameover(currentPlayer)) {
